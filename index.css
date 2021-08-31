@@ -1,0 +1,120 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.header_right{
+        display: flex;
+        align-items: center;
+        margin: 0;
+}
+.list{
+    margin-right: 30px;
+    font-size: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.content_image{
+    width: 200px;
+    height: 160px;
+    padding: 20px;
+}
+.content_body{
+    margin-left: 20px;
+}
+.content_details{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+}
+.content_paragraph{
+     font-size: 17px;
+     font-weight: 300;
+     line-height: 30px;
+     color: lightslategray;
+     white-space: wrap;
+}
+.content__tags{
+    display: flex;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.content__list{
+    padding: 10px;
+    color: grey
+}
+.content__topic{
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(231, 187, 105)
+}
+.content__partition{
+    border-right: 1px solid grey;
+    padding-right: 100px;
+}
+
+.recommended{
+    margin: 80px;
+    border-bottom: 1px solid grey;
+    height: 200px;
+}
+.recommended_row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row_direction{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 10px;
+}
+
+
+.topic{
+    margin-bottom: 10px;
+    color: rgb(172, 165, 165);
+}
+.recommended_topic{
+    background-color: rgb(175 170 170 / 33%);
+    padding: 10px;
+    border-radius: 30px;
+    list-style-type: none;
+    margin: 10px;
+}
+.images{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.btn{
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 199, 199);
+}
+.followed__heading{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.followed__body{
+    margin: 0;
+}
