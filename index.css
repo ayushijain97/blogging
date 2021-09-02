@@ -5,8 +5,9 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo{
-    width: 200px;
-    height: 200px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 30px;
 }
 .header_right{
         display: flex;
@@ -66,7 +67,6 @@
     border-right: 1px solid grey;
     padding-right: 100px;
 }
-
 .recommended{
     margin: 80px;
     border-bottom: 1px solid grey;
@@ -87,8 +87,6 @@
     width: 250px;
     margin-left: 10px;
 }
-
-
 .topic{
     margin-bottom: 10px;
     color: rgb(172, 165, 165);
