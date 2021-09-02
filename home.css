@@ -1,7 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo{
+    height: 75px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.header_right{
+        display: flex;
+        align-items: center;
+        margin: 0;
+}
+.list{
+    margin-right: 30px;
+    font-size: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
 .form{
-    width: 100rem;
-    border: 1px solid grey;
+    width: 100rem; 
     padding: 20px;
+    margin-top: 30px;
     height: 800px;
     background-color: white;
 
