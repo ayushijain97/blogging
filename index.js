@@ -5,11 +5,10 @@ function readingTime() {
   const time = Math.ceil(words / wpm);
   return time;
 }
-
-
 const createBlog = async (e) => {
   let inputData = document.querySelector(".form_inputField").value;
   const readTime = readingTime();
+  const contentTags = document.getElementById("datalist").value;
   // const today = new Date();
   // let month = today.toLocaleString("default", { month: "short" });
   // if (today.getFullYear)
@@ -24,14 +23,13 @@ const createBlog = async (e) => {
       },
       body: JSON.stringify({
         inputData: inputData,
-        readTime: readTime
+        readTime: readTime,
+        contentTags: contentTags,
       }),
     });
     const data = await response.text();
-    // enter you logic when the fetch is successful
     console.log(data);
   } catch (error) {
-    // enter your logic for when there is an error (ex. error toast)
     console.log(error);
   }
 };

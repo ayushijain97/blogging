@@ -20,6 +20,12 @@
     list-style-type: none;
     cursor: pointer;
 }
+.tagContainer{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
 .form{
     width: 100rem; 
     padding: 20px;
