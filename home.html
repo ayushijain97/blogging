@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/home.css">
+    
 </head>
 <body>
+    <header class="header">
+        <img src="images/DropKnowledge.png" alt="blog logo" class="logo"/>
+            <ul class="header_right">
+                <p onclick="location.href = '/index.html';" class="list">Home</p>
+                <p onclick="location.href = '/home.html';" class="list">Write-Blog</li>
+            </ul>
+    </header>
     <div class="form">
         <h2>Start blogging</h2>
         <div>
             <textarea name= "description" placeholder="start writing....." maxlength="500" class="form_inputField"></textarea>
         </div>
-        <button type="submit" class="formBtn">POST</button>
+        <div class="tagContainer">
+            <div>
+            <label for="datalist">Choose a Tag:</label>
+            <input list="list" id="datalist" placeholder="Add a tag">
+                <datalist id="list">
+                    <option value="Engineering"></option>
+                    <option value="Technology"></option>
+                    <option value="Startup"></option>
+                    <option value="Personal Development"></option>
+                </datalist>
+                </div>
+            <button type="submit" class="formBtn">POST</button>
+        </div>
+        <script src="index.js"></script>
     </div>   
 </body>
 </html>
