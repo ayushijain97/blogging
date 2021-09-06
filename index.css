@@ -53,6 +53,7 @@
     display: flex;
     list-style-type: none;
     padding-left: 10px;
+
 }
 .content__list{
     padding: 10px;
@@ -61,7 +62,8 @@
 .content__topic{
     color: black;
     border-radius: 10px;
-    background-color: rgb(231, 187, 105)
+    background-color: rgb(231, 187, 105);
+    margin-left: 10px;
 }
 .content__partition{
     border-right: 1px solid grey;

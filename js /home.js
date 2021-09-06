@@ -1,3 +1,9 @@
+function clearBodyField() {
+  document.querySelector(".form_inputField").value = " ";
+}
+function clearTitleField() {
+  document.querySelector(".formTitle").value = " ";
+}
 function readingTime() {
   const text = document.querySelector(".form_inputField").value;
   const wpm = 225;
@@ -18,7 +24,7 @@ const createBlog = async (e) => {
 
   e.preventDefault();
   try {
-    const response = await fetch("http://localhost:3000/blog", {
+    const response = await fetch("http://localhost:3000/postBlog", {
       method: "POST",
       headers: {
         "Content-type": "application/JSON",
@@ -31,28 +37,12 @@ const createBlog = async (e) => {
       }),
     });
     const data = await response.text();
+    clearBodyField();
+    clearTitleField();
     console.log(data);
   } catch (error) {
     console.log(error);
   }
 };
 
-const renderPage = () => {
-  const markup = `
-            <div class="content_details">
-                <div class="content_body">
-                    <h2>Lorem ipsum dolor sit amet consectetur,</h2>
-                    <p class="content_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate voluptas,.</p>
-                    <ul class="content__tags">
-                        <li class="content__list content__date">Apr 3</li>
-                        <li class="content__list content__time">min</li>
-                        <li class="content__list  content__topic">Technology</li>
-                    </ul>
-                </div>
-                <img src="images/background.jpeg" alt="" class="content_image"/>
-            </div>`;
-          document.querySelector(".content__partition").insertAdjacentHTML("afterbegin",markup);
-}
-window.addEventListener("load", renderPage);
 document.querySelector(".formBtn").addEventListener("click", createBlog);
-
