@@ -34,10 +34,25 @@
     background-color: white;
 
 }
+.formHeading{
+    font-size: 50px;
+}
+.formTitle{
+    outline: none;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
 .form_inputField{
     width: 1000px;
     height: 400px;
     outline: none;
+    padding: 10px;
+    font-size: 20px;
 }
 .formBtn{
     width: 100px;
